@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Custom Chat",
+  "description": "A customized Gemini chat interface allowing persistent system instructions and session management.",
+  "requestFramePermissions": []
+}
