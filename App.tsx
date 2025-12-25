@@ -195,7 +195,8 @@ function App() {
       let fullResponseText = '';
 
       for await (const chunk of streamResult) {
-        const chunkText = chunk.text();
+        // Fix: chunk.text is a property, not a function
+        const chunkText = chunk.text;
         if (chunkText) {
             fullResponseText += chunkText;
             
